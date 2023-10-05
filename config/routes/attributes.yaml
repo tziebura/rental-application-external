@@ -1,0 +1,15 @@
+AddressService_controllers:
+  resource:
+    path: ../../src/AddressService/Infrastructure/Api/Rest
+    namespace: App\AddressService\Infrastructure\Api\Rest
+  type: attribute
+
+PaymentService_controllers:
+  resource:
+    path: ../../src/PaymentService/Infrastructure/Api/Rest
+    namespace: App\PaymentService\Infrastructure\Api\Rest
+  type: attribute
+
+kernel:
+  resource: App\Kernel
+  type: attribute
