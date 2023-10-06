@@ -27,6 +27,6 @@ class AddressController extends AbstractController
             return new Response($valid->getResponseAsJson());
         }
 
-        return new Response('{"status": "UNKNOWN"');
+        return new Response('{"status": "UNKNOWN"}');
     }
 }
