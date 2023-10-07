@@ -18,16 +18,3 @@ services:
         volumes:
             - ".:/app"
             - "./docker_dev/php.ini:/usr/local/etc/php/conf.d/custom.ini"
-        depends_on:
-            - db
-    db:
-        image: mariadb
-        environment:
-            MYSQL_ROOT_PASSWORD: root
-        ports:
-            - "3307:3306"
-
-networks:
-    default:
-        external:
-            name: rental-application-external_default
